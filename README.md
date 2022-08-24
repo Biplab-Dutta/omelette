@@ -1,6 +1,9 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63902683/186323936-b9773d51-403d-4102-8f2e-b1071c99c33c.png" height="100" alt="Omelette" />
+</p>
+
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
-
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT

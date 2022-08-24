@@ -18,8 +18,8 @@ This package is best suited when followed similar architecture as shown in the i
 
 ![Flutter Architecture Diagram](https://user-images.githubusercontent.com/63902683/186157513-ed24692b-5c57-4ef4-96db-b8b630e35896.png)
 
-# Usecase
-## RemoteResponse Wrapper
+# RemoteResponse Wrapper
+## Usecase
 When dealing with API requests that supports [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag), it becomes necessary to check if the received response is a modified response, an unmodified response or a no connection response. The package provides easy to use wrapper for such scenarios.
 
 ### Example

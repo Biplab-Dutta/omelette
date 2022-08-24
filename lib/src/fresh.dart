@@ -22,6 +22,15 @@ class Fresh<T> {
 
   /// Determines if the next page is available or not in pagination.
   final bool? isNextPageAvailable;
+
+  /// Helper method to return new Fresh instance.
+  Fresh<T> newFreshInstance(T entity) {
+    return Fresh._(
+      entity: entity,
+      isFresh: isFresh,
+      isNextPageAvailable: isNextPageAvailable,
+    );
+  }
 }
 
 /// Represents that the entity is fresh.

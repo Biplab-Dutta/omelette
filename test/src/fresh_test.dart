@@ -36,6 +36,34 @@ void main() {
           );
         },
       );
+
+      test(
+        'copyWith(): returns a new instance of Fresh',
+        () {
+          final freshness = Fresh.yes(
+            entity: ['a'],
+            isNextPageAvailable: true,
+          );
+
+          final newFreshObject = freshness.newFreshInstance(['a', 'b']);
+
+          expect(
+            newFreshObject,
+            isA<Fresh<List<String>>>()
+                .having(
+                  (e) => e.entity,
+                  'entity',
+                  ['a', 'b'],
+                )
+                .having((e) => e.isFresh, 'isFresh', true)
+                .having(
+                  (e) => e.isNextPageAvailable,
+                  'isNextPageAvailable',
+                  true,
+                ),
+          );
+        },
+      );
     },
   );
 }
